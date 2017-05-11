@@ -5,13 +5,11 @@ tags: Retrofit
 category: Retrofit
 ---
 
-
-# 摘要
-
 ## Retrofit
 
 - {% post_link retrofit-getting-started 开始教程 %}
 - {% post_link retrofit-basics-of-api-description 基本操作 %}
+- {% post_link retrofit-creating-a-sustainable-android-client 创建一个可维护的Android Client %}
 
 <!--more-->
 

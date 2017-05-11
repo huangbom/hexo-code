@@ -1,13 +1,10 @@
 ---
-title: 开始使用
+title: 开始教程
 date: 2017-05-06 14:10:19
 tags: Retrofit
 category: Retrofit
 ---
-
-
 原文：[https://futurestud.io/tutorials/retrofit-getting-started-and-android-client](https://futurestud.io/tutorials/retrofit-getting-started-and-android-client)
-
 ## 开始创建一个Android Client
 
 在这个教程中我们将通过基础知识、创建一个Retrofit Android API/HTTP 客户端 ，去请求GitHub。

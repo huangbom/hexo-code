@@ -1,7 +1,7 @@
 ---
 title: Ruby on Rails 笔记
 date: 2017-05-11 09:56:46
-tags: ruby,rails
+tags: [ruby,rails]
 category: Ruby on Rails
 ---
 
@@ -27,6 +27,7 @@ rails generate controller PasswordResets new edit --no-test-framework
 rails destroy  controller StaticPages 			# 撤销staticpages controller
 rails destroy  controller StaticPages home help
 ```
+<!-- more -->
 
 ## model
 
