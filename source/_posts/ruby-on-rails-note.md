@@ -10,21 +10,21 @@ category: Ruby on Rails
 ## Rails 环境
 
 ```
-rails console						# Loading development environment
-rails console test					# Loading test environment
+rails console					# Loading development environment
+rails console test				# Loading test environment
 rails console production			# Loading production environment
 rails console --sandbox				# sandbox
 
-rails server --environment production			# server production
+rails server --environment production		# server production
 ```
 
 ## controller [plural]
 
 ```
-rails generate controller Sessions home help				# generate 命令可以接收一个可选的参数列表,创建首页、帮助页面
+rails generate controller Sessions home help		# generate 命令可以接收一个可选的参数列表,创建首页、帮助页面
 rails generate controller PasswordResets new edit --no-test-framework
 
-rails destroy  controller StaticPages 						# 撤销staticpages controller
+rails destroy  controller StaticPages 			# 撤销staticpages controller
 rails destroy  controller StaticPages home help
 ```
 
@@ -38,8 +38,8 @@ rails destroy model User
 ## migration
 
 ```
-rails generate migration add_index_to_users_email					# generate migration index
-rails generate migration add_admin_to_users admin:boolean			# add filed
+rails generate migration add_index_to_users_email			# generate migration index
+rails generate migration add_admin_to_users admin:boolean		# add filed
 rails generate migration add_password_digest_to_users password_digest:string
 rails generate migration add_reset_to_users reset_digest:string reset_sent_at:datetime
 ```
@@ -65,8 +65,8 @@ rails generate integration_test users_signup
 
 ```
 rails test
-rails test:integration								# 只执行集成测试
-rails test:models									# 执行model测试【待验证】
+rails test:integration					# 只执行集成测试
+rails test:models					# 执行model测试【待验证】
 rails test test/integration/users_login_test.rb		# 执行单个文件测试
 ```
 
@@ -99,13 +99,13 @@ update_columns(activated: true, activated_at: Time.zone.now)
 ## assert_*
 
 ```
-assert_select "div"													<div>foobar</div>
-assert_select "div", "foobar"										<div>foobar</div>
-assert_select "div.nav"												<div class="nav">foobar</div>
-assert_select "div#profile"											<div id="profile">foobar</div>
-assert_select "div[name=yo]"										<div name="yo">hey</div>
-assert_select "a[href=?]", '/', count: 1							<a href="/">foo</a>
-assert_select "a[href=?]", '/', text: "foo"							<a href="/">foo</a>
+assert_select "div"						<div>foobar</div>
+assert_select "div", "foobar"					<div>foobar</div>
+assert_select "div.nav"						<div class="nav">foobar</div>
+assert_select "div#profile"					<div id="profile">foobar</div>
+assert_select "div[name=yo]"					<div name="yo">hey</div>
+assert_select "a[href=?]", '/', count: 1			<a href="/">foo</a>
+assert_select "a[href=?]", '/', text: "foo"			<a href="/">foo</a>
 assert_select "input[name=email][type=hidden][value=?]", user.email
 	<input id="email" name="email" type="hidden" value="michael@example.com" />
 
