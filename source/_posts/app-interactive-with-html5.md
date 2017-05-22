@@ -133,9 +133,8 @@ public class BaseActivity extends Activity {
 	    	if (value.startsWith("(int)")) {
 	    		intent.putExtra(key, Integer.valueOf(value.substring(5)));
 	    	} else if (value.startsWith("(Double)")) {
-	    		intent.putExtra(key,
+	    		intent.putExtra(key,Double.valueOf(value.substring(8)));
 	    	} else {
-	    		Double.valueOf(value.substring(8)));
 	    		intent.putExtra(key, value);
 	    	}
 	    }
