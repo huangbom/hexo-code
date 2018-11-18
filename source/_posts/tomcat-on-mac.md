@@ -1,5 +1,5 @@
 ---
-title: 'tomcat on mat '
+title: 'tomcat on mac '
 date: 2017-06-26 20:34:27
 tags: tomcat
 category: tomcat
@@ -13,7 +13,6 @@ category: tomcat
 我下载的是7.0.78版本
 
 {% asset_img tomcat20170622.png This is an image %}
-
 
 下载完，放到根目录下；/Library/Tomcat
 
@@ -66,7 +65,7 @@ sh /Library/Tomcat/bin/startup.sh
 ;;
 stop)
 sh /Library/Tomcat/bin/shutdown.sh
-;;/Users/huangzhixiong/Desktop/tomcat-note/tomcat-on-mac.md
+;;
 restart)
 sh /Library/Tomcat/bin/shutdown.sh
 sh /Library/Tomcat/bin/startup.sh
@@ -83,4 +82,31 @@ exit 0
 
 1. tomcat start
 2. tomcat stop
-- tomcat restart
+3. tomcat restart
+
+## 管理Mac OS自带的Apache
+
+###Mac OS X 内置了Apache 和 PHP
+
+> 管理方法一：
+
+打开“系统设置偏好（System Preferences）” -> “共享（Sharing）” -> “Web共享（Web Sharing）”
+
+> 管理方法二：
+
+1. 启动Apache：运行“sudo apachectl start”，再输入root帐号密码
+2. 停止Apache：运行“sudo apachectl stop”，
+3. 查看Apache：版本：运行“sudo apachectl －v”，
+4. 重启Apache：运行“sudo apachectl restart”
+
+### Mac OS中Apache文件默认存放位置
+
+Mac OS 的Apache2的配置文件（httpd.config）保存在/etc/apache2
+
+Mac OS 的Apache2的程序文件（httpd, ab） 保存在/usr/sbin/
+
+Mac OS 的Apache2的默认根目录：/Library/WebServer/Documents
+
+修改Apache2的配置文件，在终端运行“sudo vi /etc/apache2/httpd.conf”，打开Apche的配置文件进行修改。
+
+

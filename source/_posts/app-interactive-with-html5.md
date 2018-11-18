@@ -32,7 +32,7 @@ class JSInteface1 {
     }
 }
 ```
-
+/Users/huangyaoshi/Documents/hexo
 同时，需要注册 baobao 和 JSInterface1 的对应关系:
 
 ```
