@@ -71,3 +71,20 @@ deploy:
   type: git
   repo: https://github.com/huangbom/huangbom.github.io.git
   branch: master
+
+# algolia search
+algolia:
+  applicationID: '7QEZ4QYGJG'
+  apiKey: '9a7a1443233ee3d14ba75db3ff62a58b'
+  adminApiKey: 'bdbedc890d89551ae65654e86034d575'
+  indexName: ‘dev_algolia’
+  chunkSize: 5000
+
+# 设置RSS
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 5
+  hub:
+  content: 'true'
+
