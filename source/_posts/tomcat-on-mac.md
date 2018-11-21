@@ -5,14 +5,14 @@ tags: tomcat
 category: tomcat
 ---
 
-#Mac 下安装配置Tomcat
+# Mac 下安装配置Tomcat
 
 ## 安装
 
 去[Apache Tomcat](http://tomcat.apache.org/download-70.cgi)上下载一个Tomcat。
 我下载的是7.0.78版本
 
-{% asset_img tomcat20170622.png This is an image %}
+![tom](/tomcat20170622.png)
 
 下载完，放到根目录下；/Library/Tomcat
 
