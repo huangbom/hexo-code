@@ -12,7 +12,7 @@ category: tomcat
 去[Apache Tomcat](http://tomcat.apache.org/download-70.cgi)上下载一个Tomcat。
 我下载的是7.0.78版本
 
-![tom](/tomcat20170622.png)
+![tom](tomcat20170622.png)
 
 下载完，放到根目录下；/Library/Tomcat
 
@@ -43,7 +43,8 @@ Tomcat started.
 <!-- more -->
 
 打开浏览器输入：localhost8080 ,就可以看见tom猫这个页面
-![tomcat home page](/tomcat201706221.png)
+
+![tomcat home page](tomcat201706221.png)
 
 ## 配置快捷命令
 
