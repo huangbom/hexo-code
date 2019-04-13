@@ -1,6 +1,7 @@
 ---
-title: Hello World
-top: 10
+title: Hexo user manual
+date: 2017-11-21 10:59:47
+category: hexo
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
@@ -38,7 +39,7 @@ $ hexo deploy
 
 More info: [Deployment](https://hexo.io/docs/deployment.html)
 
-### set avatar
+### 修改头像
 
 在theme下的`_config.yml`
 
@@ -47,4 +48,18 @@ More info: [Deployment](https://hexo.io/docs/deployment.html)
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
 avatar: /images/avatar.png
+```
+
+### 修改网站标题和作者
+
+在根目录下的`_config.yml`
+
+```
+# Site
+title: 有寻有伺
+subtitle: 
+description: 为天地立心，为生民立民，为往圣继绝学，为万世开太平。
+author: 有寻有伺
+language: zh-Hans
+timezone:
 ```
